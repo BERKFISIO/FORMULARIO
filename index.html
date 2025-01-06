@@ -184,8 +184,7 @@
 
     <!-- Botones de inscripción y descarga -->
     <div class="cta-buttons">
-        <a href="https://example.com/formulario-inscripcion" target="_blank">Rellenar formulario de inscripción</a>
-        <a href="documento-ponentes.pdf" download="Descubrir_Ponentes.pdf">Descubrir ponentes</a>
+        <a href="https://example.com/formulario-inscripcion" target="_blank">Rellenar inscripción</a>
     </div>
 
     <!-- Programa -->
@@ -207,7 +206,7 @@
                     <li><strong>18:00 - 18:15 - Descanso</strong></li>
                     <li><strong>18:15 - 19:30 - Salud Reproductiva. Retos y Soluciones</strong></li>
                     <ul>
-                        <li class="tabbed">- Dani Rando. <em>Ginecólogo. Salud uterina y fertilidad.</em></li>
+                        <li class="tabbed">- Factores y enfermedades que afectan a la fertilidad. Concepto de reserva ovárica: ¿En quién tiene sentido? <em>Dani Rando. Ginecólogo.</em></li>
                         <li class="tabbed">- El embarazo no llega. ¿Qué opciones tengo? Una visión global de reproducción asistida. <em>Alejandra Fernández. Embrióloga.</em></li>
                     </ul>
                     <li><strong>19:30 - Testimonios de diferentes vivencias</strong></li>
@@ -232,7 +231,7 @@
                     <li><strong>10:00 - 10:15 - Descanso</strong></li>
                     <li><strong>10:20 - 12:00 - Sociedad y Fertilidad</strong></li>
                     <ul>
-                        <li class="tabbed">- Considerando la maternidad: ¿las mujeres sentimos presión social entorno a la maternidad? <em>Ana López. Psicóloga perinatal.</em></li>
+                        <li class="tabbed">- Considerando la maternidad: ¿las mujeres sentimos presión social en torno a la maternidad? <em>Ana López. Psicóloga perinatal.</em></li>
                         <li class="tabbed">- Los deseos agendados: sexualidad en la búsqueda de embarazo. <em>Minerva Galed Gaspar. Sexóloga.</em></li>
                         <li class="tabbed">- La espera: cuando el embarazo no llega. <em>Lucía Rodríguez. Psicóloga.</em></li>
                     </ul>
@@ -246,7 +245,7 @@
             <ul>
                 <li><strong>Creatividad</strong></li>
                 <ul>
-                    <li class="tabbed">- 12:15 - 14:15. Momento Moreu. Maternidades Dibujadas. <em>Mamen Moreu. En Berkana Espacio Activo.</em></li>
+                    <li class="tabbed">- 12:15 - 14:15. Maternidades Dibujadas. <em>Mamen Moreu. En Berkana Espacio Activo.</em></li>
                     <li class="tabbed">- 12:15 - 14:15. Escritura creativa para conectar con tus deseos y manifestar tus necesidades. <em>Sofía Lázaro de Terra Conta. Berkana Fisioterapia.</em></li>
                 </ul>
                 <li><strong>Conexión Corporal</strong></li>
@@ -266,3 +265,70 @@
         </div>
 
     </div>
+
+    <!-- Información de precios -->
+    <div class="program">
+        <h3 style="color: #ff6f61; text-align: left;">PRECIOS</h3>
+        <ul style="text-align: left;">
+            <li><strong>Dos jornadas</strong> - 85€ <em>(inscripciones antes del 14 de febrero 72€)</em></li>
+            <li><strong>Pacientes de Berkana:</strong> 80€ hasta el último día.</li>
+            <li><strong>Una jornada</strong> - 50€ <em>(inscripciones antes del 14 de febrero 42.5€)</em></li>
+            <li><strong>Pacientes de Berkana:</strong> 45€ hasta el último día.</li>
+        </ul>
+
+
+    <h3 style="color: #ff6f61; text-align: left;">Precios Talleres</h3>
+    <ul style="text-align: left;">
+        <li>Precios por taller: 25€</li>
+        <li>Precio taller <strong>AUTORREGULACIÓN EMOCIONAL:</strong> 40€</li>
+    </ul>
+</div>
+
+    <!-- Contacto -->
+    <div class="footer">
+        <h3>Contacto</h3>
+        <p>📧 <a href="mailto:fisio@berkanafisioterapia.es" style="color: #ff6f61;">fisio@berkanafisioterapia.es</a></p>
+        <p>📞 <a href="tel:665266419" style="color: #ff6f61;">665266419</a></p>
+    </div>
+
+<div class="program">
+        <h3 style="color: #ff6f61; text-align: left;">Formulario de Inscripción</h3>
+        <form action="URL_DE_DESTINO" method="POST">
+            <!-- Nombre y Apellidos -->
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <!-- DNI -->
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <!-- Dirección de Correo -->
+            <label for="email">Dirección de Correo:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Selección de Días -->
+            <label for="dias">Días:</label><br>
+            <input type="checkbox" id="dia1" name="dias" value="Dia Uno">
+            <label for="dia1">Día Uno</label><br>
+            <input type="checkbox" id="dia2" name="dias" value="Dia Dos">
+            <label for="dia2">Día Dos</label><br>
+            <input type="checkbox" id="todos" name="dias" value="Todos">
+            <label for="todos">Todas las Jornadas</label><br><br>
+
+            <!-- Selección de Talleres -->
+            <label for="talleres">Talleres Elegidos:</label><br>
+            <input type="checkbox" id="creatividad" name="talleres" value="Creatividad">
+            <label for="creatividad">Creatividad</label><br>
+            <input type="checkbox" id="conexion" name="talleres" value="Conexión Corporal">
+            <label for="conexion">Conexión Corporal</label><br><br>
+
+            <!-- Botón de Enviar -->
+            <input type="submit" value="Rellenar Inscripción">
+        </form>
+    </div>
+
+
+
+</body>
+</html>
+
